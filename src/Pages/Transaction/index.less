@@ -1,0 +1,159 @@
+
+.transaction-wrapper{  
+
+    .transaction-sider{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+
+        .system-title-wrapper{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .system-title{
+                width: 95%;
+                height: 80px;
+                color: var(--bkg-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                font-weight: bold;
+                border-bottom: 2px solid gray;
+                margin-bottom: 20px;
+            }
+        }
+
+        .brief-info-wrapper{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .brief-info{
+                width: 95%;
+                padding: 5px;
+                border-radius: 5px;
+                background-color: rgb(90, 90, 90);
+                margin-bottom: 20px;
+                display: flex;
+    
+                .brief-info-avatar{
+                    display: flex;
+                    align-items: center;
+                    margin-left: 10px;
+                }
+    
+                .brief-info-content{
+                    margin-left: 20px;
+                    .brief-info-username{
+                        color: var(--bkg-color);
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                        cursor:default;
+                    }
+                    .brief-info-balance{
+                        color: var(--bkg-color);
+                        font-size: 18px;
+                        font-weight: bold;
+                        cursor:default;
+                    }
+                }
+            }
+        }
+
+        .sider-menu{
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .menu-item-wrapper{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                // justify-content: center;
+                align-items: center;
+
+                .menu-item{
+                    width: 100%;
+                    height: 60px;
+                    display: flex;
+                    // justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: all .2s;
+
+                    .menu-icon{
+                        font-size: 20px;
+                        color: gray;
+                        transition: all .2s;
+                        margin-left: 15px;
+                    }
+
+                    .item-title{
+                        font-size: 16px;
+                        // font-weight: bold;
+                        color:gray;
+                        margin-left: 10px;
+                        transition: all .2s;
+                    }
+                }
+
+                .menu-item:hover{
+                    .menu-icon{
+                        font-size: 20px;
+                        color: rgb(200,200,200);
+                    }
+
+                    .item-title{
+                        font-size: 16px;
+                        // font-weight: bold;
+                        color: rgb(200,200,200);
+                        margin-left: 10px;
+                    }
+                }
+
+                .active-item{
+                    width: 98%;
+                    height: 60px;
+                    display: flex;
+                    // justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    background-color: rgb(22,119,225);
+                    cursor: pointer;
+
+                    .menu-icon{
+                        font-size: 20px;
+                        color: var(--bkg-color);
+                        margin-left: 15px;
+                    }
+
+                    .item-title{
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: var(--bkg-color);
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .logout-wrapper{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+
+                .logout-btn{
+                    width: 98%;
+                    height: 50px;
+                    font-size: 17px;
+                }
+            }
+    
+        }
+    }
+}

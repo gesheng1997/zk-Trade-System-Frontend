@@ -1,0 +1,219 @@
+.create-trans-wrapper{
+    height: 100%;
+    .create-trans-form{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .trans-participants{
+            width: 100%;
+            height: 42%;
+            display: flex;
+            justify-content:space-between;
+            margin-bottom: 5px;
+
+            .trans-from-info{
+                width: 45%;
+                padding : 5px 20px 5px 20px;
+                border: 2px solid rgba(0,0,0,.1);
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .amount-wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .amount-content{
+                    display: flex;
+                    justify-content: center;
+
+                    .amount-item{
+                        width: 90%;
+
+                        .amount-title{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            .trans-to-info{
+                width: 45%;
+                padding : 20px;
+                border: 2px solid rgba(0,0,0,.1);
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                transition: all .2s;
+            }
+
+            .participant-title{
+                font-size: 20px;
+                text-align: center;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            .form-item{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 50px;
+                
+                .form-item-addon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80px;
+                    height: 100%;
+                    font-weight: bold;
+                    // border-radius: 5px;
+                    // border: 1px solid black;
+                    // background-color: var(--bkg-color);
+                }
+
+                .item-addon{
+                    padding: 0 11px;
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0.02);
+                    border: 1px solid #d9d9d9;
+                    border-right: none;
+                    border-radius: 6px;
+                    transition: all 0.3s;
+                    line-height: 1;
+                    font-size: 14px;
+                    position: relative;
+                    color: rgba(0, 0, 0, 0.88);
+                    border-start-end-radius: 0;
+                    border-end-end-radius: 0;
+                    white-space: nowrap;
+                    box-sizing: border-box;
+                    height: 32px;
+                    width: 123px;
+                }
+
+                .form-item-content{
+                    width: 80%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                :where(.css-dev-only-do-not-override-1jr9qlj).ant-form-item{
+                    margin-bottom: 0px;
+                }
+
+                :where(.css-dev-only-do-not-override-1jr9qlj).ant-select-single .ant-select-selector {
+                    // border-left: none;
+                    border-start-start-radius: 0;
+                    border-end-start-radius: 0;
+                }
+
+                :where(.css-dev-only-do-not-override-1jr9qlj).ant-input {
+                    // border-left:none;
+                    height: 32px;
+                    border-start-start-radius: 0;
+                    border-end-start-radius: 0;
+                }
+            }
+
+            :where(.css-dev-only-do-not-override-1jr9qlj).ant-form-item .ant-form-item-explain-error {
+                color: #ff4d4f;
+                // height: 0px;
+                // overflow: hidden;
+                display: none;
+                // transition: all 0s;
+            }
+        }
+
+
+        .trans-appendix{
+            height: 45%;
+            border: 2px solid rgba(0,0,0,.1);
+            border-radius: 5px;
+            padding: 20px;
+
+            .date-wrapper{
+
+            }
+
+            .comment-wrapper{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+    
+                .comment-title{
+                    width: 82px;
+                    // height: 100%;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 11px;
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0.02);
+                    border: 1px solid #d9d9d9;
+                    border-right: none;
+                    border-radius: 6px;
+                    transition: all 0.3s;
+                    line-height: 1;
+                    font-size: 14px;
+                    position: relative;
+                    color: rgba(0, 0, 0, 0.88);
+                    border-start-end-radius: 0;
+                    border-end-end-radius: 0;
+                    white-space: nowrap;
+                    box-sizing: border-box;
+                }
+    
+                .comment-content{
+                    width: 100%;
+                    margin-bottom: 0;
+                }
+
+                :where(.css-dev-only-do-not-override-1jr9qlj).ant-input-textarea-affix-wrapper.ant-input-affix-wrapper >textarea.ant-input {
+                    font-size: inherit;
+                    // border: none;
+                    // outline: none;
+                    border-start-start-radius: 0;
+                    border-end-start-radius: 0;
+                }
+            }
+
+            .appendix-addon{
+                font-weight: bold;
+            }
+        }
+
+        .launch-btn-wrapper{
+            display: flex;
+            justify-content: flex-end;
+
+            .clear-btn{
+                width: 90px;
+                margin-right: 10px;
+            }
+
+            .launch-btn{
+                width: 90px;
+            }
+        }
+    }
+
+    .launch-trans-model-content{
+        .launch-trans-model-content-toinfo{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
